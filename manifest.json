@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Play Next",
+    "version": "1.0",
+    "permissions": ["contextMenus", "activeTab", "scripting" , "declarativeContent" , "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+    "default_popup": "index.html"
+    } ,
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

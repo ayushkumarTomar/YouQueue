@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "YouQueue",
+    "description":"Plays youtube videos in queue" ,
+    "version": "1.0",
+    "permissions": ["contextMenus", "activeTab" , "storage"],
+    "background": {
+      "service_worker": "assets/background.js"
+    },
+    "action": {
+    "default_popup": "index.html"
+    } ,
+    "content_scripts": [
+      {
+        "matches": ["*://www.youtube.com/*"],
+        "js": ["assets/content.js"]
+      }
+    ] ,
+    "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
+  }
+  
