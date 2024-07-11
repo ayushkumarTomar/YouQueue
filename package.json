@@ -17,6 +17,7 @@
     "@types/chrome": "^0.0.268",
     "axios": "^1.7.2",
     "react": "^18.3.1",
+    "react-contexify": "^6.0.0",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { useEffect, useState } from 'react';
-
+import ContextMenu from './ContextMenu';
 import axios from 'axios'
 interface VideoType {
     link: string;
@@ -48,6 +48,7 @@ const VideoCard = ({ link, id , handleDelete }: VideoType) => {
     
     
     return (
+      <ContextMenu id={id} link={link} handleDelete = {handleDelete}>
         <div
             ref={setNodeRef}
             {...attributes}
@@ -66,6 +67,7 @@ const VideoCard = ({ link, id , handleDelete }: VideoType) => {
       </div>
 
         </div>
+        </ContextMenu>
     );
     
 };
