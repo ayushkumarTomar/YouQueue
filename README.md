@@ -16,9 +16,11 @@ YouQueue is a Chrome extension that empowers you to create a queue of videos to 
 ## Installation
 
 
-#### Method 1: Chrome Web Store 
+#### Method 1:  Web Store 
 
-Currently under review process for chrome store and edge addons
+Currently under review process for chrome store
+
+Edge AddOns : [YouQueue](https://microsoftedge.microsoft.com/addons/detail/youqueue/feijdlflhlkogeljaciafhbjpilongpk)
 
 
 #### Method 2: Manual Installation 
